@@ -1,43 +1,73 @@
+/* === Color Palette === */
 :root {
     --color-primary: #2563eb;
     --color-light: #f5f7fa;
     --color-dark: #1e293b;
     --color-accent: #38bdf8;
     --color-error: #ef4444;
-}
-
-body {
+  }
+  
+  /* === Fonts === */
+  body {
+    font-family: 'Inter', sans-serif;
     background-color: var(--color-light);
     color: var(--color-dark);
-}
+    margin: 0;
+    padding: 0;
+  }
   
-  /* Navbar */
-.navbar, footer {
+  h1, h2, h3, h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: var(--color-dark);
+  }
+  
+  /* === Navbar === */
+  .navbar,
+  footer {
     background-color: var(--color-primary) !important;
-}
+  }
   
-.navbar .nav-link {
+  .navbar .nav-link {
     color: white !important;
-    margin: 0 10px;
-    transition: color 0.3s;
-}
+    margin: 0 12px;
+    transition: color 0.3s ease;
+  }
   
-.navbar .nav-link:hover {
+  .navbar .nav-link:hover {
     color: var(--color-accent) !important;
-}
+  }
   
-/* Buttons */
-.btn-primary {
+  /* === Buttons === */
+  .btn-primary {
     background-color: var(--color-primary);
     border-color: var(--color-primary);
-}
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
   
-.btn-primary:hover {
+  .btn-primary:hover {
     background-color: var(--color-accent);
     border-color: var(--color-accent);
-}
+  }
   
-  /* Section Titles */
-h1, h2, h3 {
-    color: var(--color-dark);
-}
+  /* === Cards & Sections === */
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  /* === Footer === */
+  footer p {
+    margin: 0;
+    font-size: 0.95rem;
+  }
+  
