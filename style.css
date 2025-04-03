@@ -1,7 +1,7 @@
 /* === Color Palette === */
 :root {
     --color-primary: #2563eb;
-    --color-light: #f5f7fa;
+    --color-light: #e9edf3;
     --color-dark: #1e293b;
     --color-accent: #38bdf8;
     --color-error: #ef4444;
@@ -70,4 +70,8 @@
     margin: 0;
     font-size: 0.95rem;
   }
-  
+
+  html {
+    scroll-behavior: smooth;
+  }
+    
